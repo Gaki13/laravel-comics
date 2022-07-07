@@ -63,6 +63,87 @@ body {
   border-bottom: 3px solid var(--primary-color);
 }
 
+/*-------------------------
+    Sezione footer top
+--------------------------*/
+.footer-top {
+  height: 32.5rem;
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container-footer-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-lists {
+  display: flex;
+  height: 40rem;
+  gap: 3rem;
+  align-items: flex-start;
+  font-size: 1.15rem;
+}
+
+.col-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #698887;
+}
+
+.col-ul-title {
+  color: white;
+  margin: 1.25rem 0;
+}
+
+.logo-big img {
+  height: 50rem;
+  margin: -9rem 0 0 0;
+}
+
+/*------------------------------
+    Sezione footer bottom
+--------------------------------*/
+.bottom-footer {
+  height: 10rem;
+  background-color: var(--tertiary-color);
+}
+
+.container-footer-bottom {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-title {
+  color: #0282f9;
+}
+
+.sign-up-btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: inherit;
+  border: 3px solid #0282f9;
+  color: white;
+  transition: background-color;
+}
+
+.sign-up-btn:hover {
+  background-color: #0282f9;
+  cursor: pointer;
+}
+
 .container {
   margin: auto;
   width: 100%;
