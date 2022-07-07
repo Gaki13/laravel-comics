@@ -1,0 +1,38 @@
+.top-header{
+    background-color: var(--primary-color);
+}
+
+.top-header-content{
+    text-align: end;  
+    color: white;
+    padding: .3125rem;
+    span{
+        margin-left: 2.25rem;
+    }
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    &-right {
+        font-weight: bold;
+    } ul{
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    input{
+        font-size: 16px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        text-align: end;
+        border: none;
+        border-bottom: 3px solid var(--primary-color);
+    }
+}
