@@ -175,22 +175,22 @@ body {
   margin-bottom: -25px;
 }
 
-main {
+.main-content {
   background-color: var(--secondary-color);
   display: flex;
   color: white;
   padding: 60px 0;
 }
-main .comics-list {
+.main-content .comics-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-main .comics-list li {
+.main-content .comics-list li {
   width: calc(16.6666666667% - 20px);
   margin: 0 10px;
 }
-main .main-btn {
+.main-content .main-btn {
   padding: 10px 40px;
   color: white;
   background-color: var(--primary-color);
@@ -199,16 +199,44 @@ main .main-btn {
   margin-top: 70px;
   transition: all;
 }
-main .main-btn:hover {
+.main-content .main-btn:hover {
   cursor: pointer;
   background-color: white;
   color: var(--secondary-color);
 }
-main .card img {
+.main-content .card img {
   width: 100%;
   height: 246px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.top-footer {
+  height: 20rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.footer-ul li {
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.footer-ul a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 1.5rem;
 }

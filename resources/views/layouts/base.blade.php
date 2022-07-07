@@ -19,7 +19,10 @@
     
     {{-- main  --}}
     <main>
-        @yield('page-content')
+        <div class="main-content">
+            @yield('page-content')
+        </div>
+            @yield('footer-top') 
     </main>
     
     {{-- footer  --}}
