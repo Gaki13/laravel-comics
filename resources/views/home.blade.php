@@ -5,5 +5,5 @@
 @endsection
 
 @section('page-content')
-    <h1></h1>
+    
 @endsection

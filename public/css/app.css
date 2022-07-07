@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
-
-700&display=swap);:root {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);:root {
   /*------------------------------
           COLORS
   ------------------------------*/
@@ -33,7 +31,6 @@ body {
   color: white;
   padding: 0.3125rem;
 }
-
 .top-header-content span {
   margin-left: 2.25rem;
 }
@@ -44,23 +41,19 @@ body {
   align-items: center;
   padding: 2.5rem 0;
 }
-
 .main-header-right {
   font-weight: bold;
 }
-
 .main-header ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
 }
-
 .main-header a {
   text-decoration: none;
   text-transform: uppercase;
   color: black;
 }
-
 .main-header input {
   font-size: 16px;
   padding-bottom: 5px;
@@ -82,3 +75,21 @@ body {
   max-width: var(--container-sm);
 }
 
+.hero {
+  width: 100%;
+  height: 35rem;
+  background-image: url("../img/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.hero .container h2 {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 15px 25px;
+  margin-bottom: -25px;
+}
