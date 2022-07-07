@@ -174,3 +174,41 @@ body {
   padding: 15px 25px;
   margin-bottom: -25px;
 }
+
+main {
+  background-color: var(--secondary-color);
+  display: flex;
+  color: white;
+  padding: 60px 0;
+}
+main .comics-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .comics-list li {
+  width: calc(16.6666666667% - 20px);
+  margin: 0 10px;
+}
+main .main-btn {
+  padding: 10px 40px;
+  color: white;
+  background-color: var(--primary-color);
+  border-style: none;
+  margin-left: 45%;
+  margin-top: 70px;
+  transition: all;
+}
+main .main-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--secondary-color);
+}
+main .card img {
+  width: 100%;
+  height: 246px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
