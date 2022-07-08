@@ -1,35 +1,30 @@
 @extends('layouts.base')
 
 @section('title')
-    DC Comics
+    {{$comic['title']}}
 @endsection
 
 @section('hero')
     {{-- sezione dell'hero --}}
     <div class="hero">
         <div class="container">
-            <h2>CURRENT SERIES</h2>
+            <div class="img-overlay">
+                <p>COMIC BOOK</p>
+                <img src="{{$comic["thumb"]}}" alt="copertina del comics">
+                <p>VIEW GALLERY</p>
+            </div>    
         </div>
     </div>
 @endsection
 
 @section('page-content')
-{{-- sezione con le serie --}}
-<div class="container">
-        <ul class="comics-list">
-            @foreach ($comics as $comic)
-                <li class="card">
-                    <img src="{{$comic["thumb"]}}" alt="copertina del comics">
-                    <h3>{{$comic["title"]}}</h3>
-                </li>
-            @endforeach
-        </ul> 
-    <button class="main-btn"><h3>LOAD MORE</h3></button>    
-</div>  
+    <div class="container">
+
+    </div>
 @endsection
 
 @section('footer-top')
-    {{-- sezione con i link  --}}
+     {{-- sezione con i link  --}}
    <div class="top-footer">
         <div class="container-small">
             <ul class="footer-ul" >
@@ -37,9 +32,7 @@
                 <li><a href="#"><img src="{{asset('/img/buy-comics-merchandise.png')}}" alt=""> DC Mercahndise</a></li>
                 <li><a href="#"><img src="{{asset('/img/buy-comics-subscriptions.png')}}" alt=""> Subscription</a></li>
                 <li><a href="#"><img src="{{asset('/img/buy-comics-shop-locator.png')}}" alt=""> Comic Shop Locator</a></li>
-                <li><a href="#"><img src="{{asset('/img/buy-dc-power-visa.svg')}}" alt=""> DC Power Visa</a></li>
             </ul>
         </div>
     </div> 
-     
 @endsection

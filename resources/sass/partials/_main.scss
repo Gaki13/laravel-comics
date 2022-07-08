@@ -1,3 +1,35 @@
+// style dell'hero
+.hero{
+    width: 100%;
+    height: 35rem;
+    background-image: url('../img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   .container{
+       height: 100%;
+       display: flex;
+       align-items: flex-end;
+       h2{
+           color: white;
+           background-color: var(--primary-color);
+           padding: 15px 25px;
+           margin-bottom: -25px;
+       }
+   }
+}
+
+// style dell'hero in comic 
+.img-overlay{
+    border: 1px solid white;
+    p{
+        background-color: #00a9d9;
+        color: white;
+        font-size: .75rem;
+        padding: .1875rem;
+    }
+}
+
+// style del main 
 .main-content{
     background-color: var(--secondary-color);
      display: flex;
@@ -35,6 +67,8 @@
         }
     }     
 } 
+
+// style del footer 
 .top-footer{
         height: 20rem;
         background-color: var(--primary-color);

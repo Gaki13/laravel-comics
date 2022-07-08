@@ -14,15 +14,13 @@
     {{-- header --}}
     @include('partials.header')
 
-    {{-- hero  --}}
-    @include('partials.hero')
-    
     {{-- main  --}}
     <main>
+        @yield('hero')
         <div class="main-content">
             @yield('page-content')
         </div>
-            @yield('footer-top') 
+        @yield('footer-top') 
     </main>
     
     {{-- footer  --}}
