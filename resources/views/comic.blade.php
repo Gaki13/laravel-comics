@@ -11,15 +11,18 @@
             <div class="img-overlay">
                 <p>COMIC BOOK</p>
                 <img src="{{$comic["thumb"]}}" alt="copertina del comics">
-                <p>VIEW GALLERY</p>
+                <p class="view-gallery">VIEW GALLERY</p>
             </div>    
         </div>
+    <div class="hero-divider"></div> 
     </div>
 @endsection
 
 @section('page-content')
     <div class="container">
-
+        <div class="main-comic">
+            
+        </div>
     </div>
 @endsection
 

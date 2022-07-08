@@ -177,30 +177,44 @@ body {
 
 .img-overlay {
   border: 1px solid white;
+  position: relative;
+  margin-bottom: -3.25rem;
 }
 .img-overlay p {
   background-color: #00a9d9;
   color: white;
   font-size: 0.75rem;
   padding: 0.1875rem;
+  position: absolute;
+}
+.img-overlay .view-gallery {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.main-content {
+.hero-divider {
+  height: 4.6875rem;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+.main-home {
   background-color: var(--secondary-color);
   display: flex;
   color: white;
   padding: 60px 0;
 }
-.main-content .comics-list {
+.main-home .comics-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-.main-content .comics-list li {
+.main-home .comics-list li {
   width: calc(16.6666666667% - 20px);
   margin: 0 10px;
 }
-.main-content .main-btn {
+.main-home .main-btn {
   padding: 10px 40px;
   color: white;
   background-color: var(--primary-color);
@@ -209,18 +223,24 @@ body {
   margin-top: 70px;
   transition: all;
 }
-.main-content .main-btn:hover {
+.main-home .main-btn:hover {
   cursor: pointer;
   background-color: white;
   color: var(--secondary-color);
 }
-.main-content .card img {
+.main-home .card img {
   width: 100%;
   height: 246px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.main-comic {
+  background-color: inherit;
+  margin-top: 75px;
+  height: 200px;
 }
 
 .top-footer {

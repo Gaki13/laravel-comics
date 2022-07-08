@@ -15,7 +15,7 @@
 
 @section('page-content')
 {{-- sezione con le serie --}}
-<div class="container">
+<div class="container main-home">
         <ul class="comics-list">
             @foreach ($comics as $comic)
                 <li class="card">

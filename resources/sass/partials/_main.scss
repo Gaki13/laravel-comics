@@ -21,16 +21,28 @@
 // style dell'hero in comic 
 .img-overlay{
     border: 1px solid white;
+    position: relative;
+    margin-bottom: -3.25rem;
     p{
         background-color: #00a9d9;
         color: white;
         font-size: .75rem;
         padding: .1875rem;
+        position: absolute;
+    }
+    .view-gallery{
+        bottom: 0;
+        width: 100%;
+        text-align: center;
     }
 }
-
+.hero-divider{
+    height: 4.6875rem;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
 // style del main 
-.main-content{
+.main-home{
     background-color: var(--secondary-color);
      display: flex;
      color: white;
@@ -67,6 +79,12 @@
         }
     }     
 } 
+// style del main in comic
+.main-comic{
+    background-color: inherit;
+    margin-top: 75px;
+    height: 200px;
+}
 
 // style del footer 
 .top-footer{
