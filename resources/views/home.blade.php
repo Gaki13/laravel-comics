@@ -15,7 +15,8 @@
 
 @section('page-content')
 {{-- sezione con le serie --}}
-<div class="container main-home">
+<div class="main-home">
+    <div class="container">
         <ul class="comics-list">
             @foreach ($comics as $comic)
                 <li class="card">
@@ -24,8 +25,10 @@
                 </li>
             @endforeach
         </ul> 
-    <button class="main-btn"><h3>LOAD MORE</h3></button>    
-</div>  
+        <button class="main-btn"><h3>LOAD MORE</h3></button>    
+    </div>
+</div>
+  
 @endsection
 
 @section('footer-top')

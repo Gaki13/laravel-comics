@@ -240,7 +240,48 @@ body {
 .main-comic {
   background-color: inherit;
   margin-top: 75px;
-  height: 200px;
+  padding: 75px 0;
+  min-height: 200px;
+}
+.main-comic .title-main {
+  color: #003f5e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-comic .top-main-comic {
+  display: flex;
+}
+.main-comic .top-main-comic .title-side {
+  margin-right: 45px;
+}
+.main-comic .top-main-comic .title-side .price {
+  background-color: #55ba59;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #357739;
+}
+.main-comic .top-main-comic .title-side .price-left {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border-right: 2px solid #357739;
+  padding: 20px 2.1875rem;
+  color: white;
+}
+.main-comic .top-main-comic .title-side .price-left span {
+  color: #bafd8b;
+}
+.main-comic .top-main-comic .title-side .price .availability {
+  padding: 20px 2.1875rem;
+  color: white;
+}
+.main-comic .top-main-comic .title-side .description {
+  font-size: 20px;
+  line-height: 30px;
+  color: #555555;
+  margin-top: 30px;
 }
 
 .top-footer {
