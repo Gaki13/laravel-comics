@@ -302,7 +302,7 @@ body {
   padding-bottom: 1.875rem;
 }
 .bottom-main .bottom-main-comic hr {
-  color: #f6f6f6;
+  color: #e3e3e3;
 }
 .bottom-main .bottom-main-comic .row {
   display: flex;
@@ -350,4 +350,30 @@ body {
   text-decoration: none;
   color: white;
   gap: 1.5rem;
+}
+
+.footer-ul-comic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.top-footer-comic {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e3e3e3;
+}
+.top-footer-comic .container {
+  border: 1px solid #e3e3e3;
+}
+.top-footer-comic .footer-ul-comic li {
+  border-right: 1px solid #e3e3e3;
+  padding-right: 40px;
+}
+.top-footer-comic .footer-ul-comic a {
+  color: #9f9faa;
+  text-decoration: none;
 }

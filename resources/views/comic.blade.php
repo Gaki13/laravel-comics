@@ -97,13 +97,13 @@
 
 @section('footer-top')
      {{-- sezione con i link  --}}
-   <div class="top-footer">
-        <div class="container-small">
-            <ul class="footer-ul" >
-                <li><a href="#"><img src="{{asset('/img/buy-comics-digital-comics.png')}}" alt="">Digitals Comics</a></li>
-                <li><a href="#"><img src="{{asset('/img/buy-comics-merchandise.png')}}" alt=""> DC Mercahndise</a></li>
-                <li><a href="#"><img src="{{asset('/img/buy-comics-subscriptions.png')}}" alt=""> Subscription</a></li>
-                <li><a href="#"><img src="{{asset('/img/buy-comics-shop-locator.png')}}" alt=""> Comic Shop Locator</a></li>
+   <div class="top-footer-comic">
+        <div class="container">
+            <ul class="footer-ul-comic" >
+                <li><a href="#">Digitals Comics<img  src="{{asset('/img/buy-comics-digital-comics.png')}}" alt=""></a></li>
+                <li><a href="#"> DC Mercahndise<img src="{{asset('/img/buy-comics-merchandise.png')}}" alt=""></a></li>
+                <li><a href="#">Subscription<img src="{{asset('/img/buy-comics-subscriptions.png')}}" alt=""> </a></li>
+                <li><a href="#">Comic Shop Locator<img src="{{asset('/img/buy-comics-shop-locator.png')}}" alt=""> </a></li>
             </ul>
         </div>
     </div> 
