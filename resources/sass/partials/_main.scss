@@ -124,8 +124,52 @@
                 margin-top: 30px;
             }
         }
+        .adv-side{
+            text-align: end;
+            font-weight: bold;
+            color: #555555;
+        }
     }
+    
 }
+
+.bottom-main{
+    border-top: 1px solid #e3e3e3;
+    background-color: #f6f6f6;
+    padding: 30px 0 150px 0;
+   .bottom-main-comic{
+        display: flex;
+        .title-btm-main{
+            color: #003f5e;
+            padding-bottom: 1.875rem;
+        }
+        hr{
+            color: #f6f6f6;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            &-text{
+                width: 60%;
+            }
+            span{
+               a{
+                text-decoration: none;
+                color: #00a9da;
+               }
+            }
+        }
+        .talent{
+            width: 65%;
+            padding-right: 50px;
+        }
+        .specs{
+            width: 35%;
+        }
+    } 
+}
+
 
 // style del footer 
 .top-footer{

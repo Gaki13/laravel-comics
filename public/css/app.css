@@ -283,6 +283,46 @@ body {
   color: #555555;
   margin-top: 30px;
 }
+.main-comic .top-main-comic .adv-side {
+  text-align: end;
+  font-weight: bold;
+  color: #555555;
+}
+
+.bottom-main {
+  border-top: 1px solid #e3e3e3;
+  background-color: #f6f6f6;
+  padding: 30px 0 150px 0;
+}
+.bottom-main .bottom-main-comic {
+  display: flex;
+}
+.bottom-main .bottom-main-comic .title-btm-main {
+  color: #003f5e;
+  padding-bottom: 1.875rem;
+}
+.bottom-main .bottom-main-comic hr {
+  color: #f6f6f6;
+}
+.bottom-main .bottom-main-comic .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.bottom-main .bottom-main-comic .row-text {
+  width: 60%;
+}
+.bottom-main .bottom-main-comic .row span a {
+  text-decoration: none;
+  color: #00a9da;
+}
+.bottom-main .bottom-main-comic .talent {
+  width: 65%;
+  padding-right: 50px;
+}
+.bottom-main .bottom-main-comic .specs {
+  width: 35%;
+}
 
 .top-footer {
   height: 20rem;

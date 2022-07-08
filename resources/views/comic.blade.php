@@ -19,8 +19,9 @@
 @endsection
 
 @section('page-content')
-    <div class="container">
-        <div class="main-comic">
+    <div class="top-main">
+        <div class="container">
+            <div class="main-comic">
             {{-- zona con titolo e annuncio --}}
             <div class="top-main-comic">
                 <div class="title-side">
@@ -30,7 +31,7 @@
                             <p><span>U.S. Price: </span>{{$comic["price"]}}</p>   <span>AVAILABLE</span>
                         </div>
                         <div class="availability">
-                          Check Availability &#9660
+                            Check Availability &#9660
                         </div>   
                     </div>
                     <p class="description">{{$comic["description"]}}</p>
@@ -40,9 +41,55 @@
                     <img src="{{asset('img/adv.jpg')}}" alt="">
                 </div>
             </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="bottom-main">
+        <div class="container">
             {{-- zona specifiche --}}
-            <div class="bottom-mai-comic">
-
+            <div class="bottom-main-comic">
+                <div class="talent">
+                    <h2 class="title-btm-main">Talent</h2>
+                    <hr>
+                    <div class="row">
+                            <h4>Art by:</h4> 
+                        <div class="row-text">
+                            @foreach ($comic['artists'] as $artists)
+                                <span><a href="">{{ $artists}}</a>, </span>
+                            @endforeach
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                            <h4>Written by:</h4>                        
+                        <div class="row-text">
+                            @foreach ($comic['writers'] as $writers)
+                                <span><a href="">{{ $writers}}</a>, </span>
+                            @endforeach
+                        </div> 
+                    </div>
+                    <hr>
+                </div>
+                <div class="specs">
+                    <h2 class="title-btm-main">Specs</h2>
+                    <hr>
+                    <div class="row" >
+                        <h4>Series:</h4>
+                         <span class="row-text"><a href="">{{ $comic["series"]}} </a></span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h4>U.S. Price:</h4>
+                         <span class="row-text">{{ $comic["price"]}} </span>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h4>On Sale Date:</h4>
+                         <span class="row-text">{{ $comic["sale_date"]}} </span>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </div>
     </div>
