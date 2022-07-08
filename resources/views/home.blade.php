@@ -20,8 +20,10 @@
         <ul class="comics-list">
             @foreach ($comics as $comic)
                 <li class="card">
-                    <img src="{{$comic["thumb"]}}" alt="copertina del comics">
-                    <h3>{{$comic["title"]}}</h3>
+                    <a href="{{ route('comic', ["id" => $id]) }}">
+                        <img src="{{$comic["thumb"]}}" alt="copertina del comics">
+                        <h3>{{$comic["title"]}}</h3>
+                    </a>
                 </li>
             @endforeach
         </ul> 
