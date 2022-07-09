@@ -18,7 +18,7 @@
 <div class="main-home">
     <div class="container">
         <ul class="comics-list">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $id => $comic )
                 <li class="card">
                     <a href="{{ route('comic', ["id" => $id]) }}">
                         <img src="{{$comic["thumb"]}}" alt="copertina del comics">

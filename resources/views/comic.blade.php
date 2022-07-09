@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('title')
-    {{$comic['title']}}
+    {{$comic["title"]}}
 @endsection
 
 @section('hero')

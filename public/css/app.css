@@ -236,6 +236,10 @@ body {
   -o-object-position: top;
      object-position: top;
 }
+.main-home .card a {
+  text-decoration: none;
+  color: white;
+}
 
 .main-comic {
   background-color: inherit;
